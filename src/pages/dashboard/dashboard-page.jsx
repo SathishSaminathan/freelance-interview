@@ -1,5 +1,5 @@
 import React from 'react';
-import FunctionalComp from './component/functionalComponent';
+import FunctionalComp from './component/dashboard-functional';
 import { withReducer } from '@store/reducerLoader';
 import reducer from './reducer';
 import sagas from './sagas';
