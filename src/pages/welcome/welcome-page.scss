@@ -1,0 +1,12 @@
+.welcome_page_container {
+	.title {
+		font-size: 2rem;
+		font-family: 'Gilroy-Bold';
+	}
+	.animation_area {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+	}
+}

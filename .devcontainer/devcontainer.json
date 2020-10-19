@@ -1,0 +1,8 @@
+{
+	"name": "reactjs-docker",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "reactjs-docker",
+	"workspaceFolder": "/home/dev/src/",
+	"extensions": ["esbenp.prettier-vscode", "donjayamanne.githistory"],
+	"shutdownAction": "stopCompose"
+}

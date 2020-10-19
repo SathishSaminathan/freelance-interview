@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@constants/*": ["src/constants/*"],
+			"@sharedComponent/*": ["src/components/shared/*"],
+			"@helpers": ["src/helpers"],
+			"@pages/*": ["src/pages/*"]
+		}
+	},
+	"exclude": ["node_modules", "dist"]
+}

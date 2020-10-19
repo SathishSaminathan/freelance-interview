@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+    reactjs-docker:
+        environment:
+            - REACT_NATIVE_PACKAGER_HOSTNAME=192.168.1.7
+            - CHOKIDAR_USEPOLLING=true
+        image: sonyarouje/react-js:3.4.1
+        extra_hosts:
+            - 'devserver:192.168.1.7'
+        expose:
+            - '3000'
+        ports:
+            - '3000:3000'
+        volumes:
+            - /D/Sony/UdayStartup/reactjs-docker-dev:/home/dev/src
