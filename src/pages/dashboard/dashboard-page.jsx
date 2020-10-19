@@ -1,15 +1,15 @@
 import React from 'react';
-import FunctionalComp from './component/dashboard-functional';
+import DashboardFunctional from './component/dashboard-functional';
 import { withReducer } from '@store/reducerLoader';
 import reducer from './reducer';
 import sagas from './sagas';
 
-const FirstPage = () => {
+const DashboardPage = () => {
 	return (
 		<div>
-			<FunctionalComp />
+			<DashboardFunctional />
 		</div>
 	);
 };
-const ReducedScreen = withReducer('counter', reducer, sagas)(FirstPage);
+const ReducedScreen = withReducer('counter', reducer, sagas)(DashboardPage);
 export default ReducedScreen;

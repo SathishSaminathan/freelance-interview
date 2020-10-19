@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-
-import MainLayout from './pages/main-layout/main-layout-page';
 import { withRouter } from 'react-router-dom';
+import DashboardPresentational from '@pages/dashboard/component/dashboard-presentational';
 
 function App() {
-	return <MainLayout />;
+	return <DashboardPresentational />;
 }
 
 export default withRouter(App);

@@ -1,0 +1,99 @@
+.custom_table {
+	.ant-table-container {
+		background-color: blue !important;
+	}
+	.ant-table-thead > tr > th {
+		color: white;
+		font-weight: 500;
+		text-align: left;
+		background: none;
+		border-bottom: 0px;
+		font-weight: bold;
+	}
+	.ant-table-header {
+		background: #ea6257 !important;
+		border-top-left-radius: 18px;
+		border-top-right-radius: 18px;
+		height: 78px;
+		display: flex;
+		// padding: 0px 70px 10px 24px;
+		align-items: center;
+		span.ant-checkbox-inner {
+			border: 1px solid white;
+			width: 3vh;
+			border-radius: 12px;
+			background: none;
+		}
+	}
+	.ant-table-body {
+		overflow-y: scroll;
+		max-height: 425px;
+		// padding: 0% 2%;
+		height: 50vh;
+		border: 0px;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+		margin-top: -15px;
+		background: white;
+		// padding: 0px 70px 0px 24px;
+		// padding: 0px 12px 0px 12px;
+		box-shadow: 0px 5px 10px rgba(174, 182, 183, 0.25);
+		span.ant-checkbox-inner {
+			border: 1px solid black;
+			height: 3vh;
+			width: 3vh;
+			border-radius: 12px;
+			background: none;
+		}
+	}
+	.ant-table-selection {
+		position: initial;
+	}
+	label.ant-checkbox-wrapper {
+		padding-left: 30%;
+	}
+	.ant-table-column-sorters {
+		padding: 10px 10px;
+	}
+	// arrow
+	span.ant-table-column-sorter-inner {
+		display: table-caption;
+	}
+	.ant-table-column-sorters {
+		display: flex;
+		justify-content: space-between;
+	}
+	.ant-table-thead th.ant-table-column-sort {
+		background: none;
+	}
+	.ant-table-thead th.ant-table-column-has-sorters:hover {
+		background: none;
+	}
+	.ant-table-thead > tr > th,
+	.ant-table-tbody > tr > td,
+	.ant-table tfoot > tr > th,
+	.ant-table tfoot > tr > td {
+		position: relative;
+		padding: 10px 10px;
+		overflow-wrap: break-word;
+	}
+
+	.ant-table-thead > tr > th {
+		font-size: 0.8rem;
+	}
+	.ant-table-tbody > tr > td {
+		border-bottom: 1.5px solid #f0f0f0;
+	}
+	.ant-table-thead {
+		tr {
+			.ant-table-cell-scrollbar {
+				display: none;
+			}
+		}
+	}
+	span.ant-table-column-sorter-inner {
+		color: #a51105;
+	}
+}

@@ -1,28 +1,3 @@
-@font-face {
-	font-family: 'Gilroy-Medium';
-	src: url(./assets/Fonts/Gilroyfont/Gilroy-Medium.otf);
-}
-
-@font-face {
-	font-family: 'Gilroy-Regular';
-	src: url(./assets/Fonts/Gilroyfont/Gilroy-Regular.otf);
-}
-
-@font-face {
-	font-family: 'Gilroy-Bold';
-	src: url(./assets/Fonts/Gilroyfont/Gilroy-Bold.otf);
-}
-
-@font-face {
-	font-family: 'Gilroy-Semibold';
-	src: url(./assets/Fonts/Gilroyfont/Gilroy-Semibold.otf);
-}
-
-@font-face {
-	font-family: 'Gilroy-Heavy';
-	src: url(./assets/Fonts/Gilroyfont/Gilroy-Heavy.otf);
-}
-
 .App {
 	text-align: center;
 }
