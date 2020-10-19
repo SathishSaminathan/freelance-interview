@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Table, Input, InputNumber, Popconfirm, Form, Row, Col } from 'antd';
 import './dashboard.scss';
+import { DoughnutComponent } from '@sharedComponent/doughnut-chart';
 
 const originData = [];
 
@@ -179,8 +180,29 @@ const DashboardPresentational = ({ onIncrementClick, counterVal }) => {
 	});
 
 	return (
-		<Row justify="center">
+		<Row justify="center" className="dashboard_container">
 			<Col xl={18}>
+				<Col xl={24} className="card_container">
+					{Array(3)
+						.fill('')
+						.map((a, i) => (
+							<Col className="card_style">
+								<Row>
+									<Col xl={6}>hai</Col>
+									<Col xl={6}>hai</Col>
+									<Col xl={6}>hai</Col>
+									<Col xl={6}>hai</Col>
+								</Row>
+							</Col>
+						))}
+				</Col>
+			</Col>
+			<Col xl={6}>
+				<Col style={{ width: '100%' }}>
+					<DoughnutComponent />
+				</Col>
+			</Col>
+			<Col xl={22}>
 				<Form form={form} component={false}>
 					<Table
 						components={{

@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Selectors from '../selectors';
 import Actions from '../action';
-import Presentational from './dashboard-presentational';
+import DashboardPresentational from './dashboard-presentational';
 
 const DashboardFunctional = ({ counterVal, onIncrementClick }) => {
-	return <Presentational onIncrementClick={onIncrementClick} counterVal={counterVal} />;
+	return <DashboardPresentational onIncrementClick={onIncrementClick} counterVal={counterVal} />;
 };
 
 const mapStateToProps = (state) => {
