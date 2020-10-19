@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import { Table, Input, InputNumber, Popconfirm, Form, Row, Col } from 'antd';
+import './dashboard.scss';
 
 const originData = [];
 
 for (let i = 0; i < 10; i++) {
 	originData.push({
 		key: i.toString(),
-		name: `Edrward ${i}`,
-		age: 32,
-		address: `London Park no. ${i}`,
+		Scrip: 'AADR',
+		Quantity: '430',
+		Price: '$50.30',
+		Avg: '$41.75',
+		Invested: '$17,952.07',
+		Portfolio: '22.06%',
+		Invested: '$3,676.93',
+		Unrealized: '20.48%',
 	});
 }
 
@@ -128,32 +134,32 @@ const DashboardPresentational = ({ onIncrementClick, counterVal }) => {
 			// width: '40%',
 			editable: true,
 		},
-		{
-			title: 'operation',
-			dataIndex: 'operation',
-			render: (_, record) => {
-				const editable = isEditing(record);
-				return editable ? (
-					<span>
-						<a
-							href="javascript:;"
-							onClick={() => save(record.key)}
-							style={{
-								marginRight: 8,
-							}}>
-							Save
-						</a>
-						<Popconfirm title="Sure to cancel?" onConfirm={cancel}>
-							<a>Cancel</a>
-						</Popconfirm>
-					</span>
-				) : (
-					<a disabled={editingKey !== ''} onClick={() => edit(record)}>
-						Edit
-					</a>
-				);
-			},
-		},
+		// {
+		// 	title: 'operation',
+		// 	dataIndex: 'operation',
+		// 	render: (_, record) => {
+		// 		const editable = isEditing(record);
+		// 		return editable ? (
+		// 			<span>
+		// 				<a
+		// 					href="javascript:;"
+		// 					onClick={() => save(record.key)}
+		// 					style={{
+		// 						marginRight: 8,
+		// 					}}>
+		// 					Save
+		// 				</a>
+		// 				<Popconfirm title="Sure to cancel?" onConfirm={cancel}>
+		// 					<a>Cancel</a>
+		// 				</Popconfirm>
+		// 			</span>
+		// 		) : (
+		// 			<a disabled={editingKey !== ''} onClick={() => edit(record)}>
+		// 				Edit
+		// 			</a>
+		// 		);
+		// 	},
+		// },
 	];
 	const mergedColumns = columns.map((col) => {
 		if (!col.editable) {
